@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="587.0" prefWidth="876.0" style="-fx-background-color: #F2F6F6; -fx-bar-fill-color: red;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QueriesController">
+   <children>
+      <TextField fx:id="value" layoutX="149.0" layoutY="81.0" />
+      <Label layoutX="27.0" layoutY="85.0" text="Price more than">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font></Label>
+      <TableView fx:id="valueTable" layoutX="516.0" layoutY="326.0" prefHeight="230.0" prefWidth="338.0" style="-fx-background-color: #9CC1DB;">
+        <columns>
+          <TableColumn prefWidth="150.39990234375" style="-fx-color: #9CC1DB;" text="C1" />
+          <TableColumn prefWidth="183.20013427734375" style="-fx-color: #9CC1DB;" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="b1" layoutX="310.0" layoutY="81.0" mnemonicParsing="false" onAction="#get" style="-fx-background-radius: 30; -fx-background-color: #C1DCE1;" text="Get">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font></Button>
+      <RadioButton fx:id="b0" layoutX="27.0" layoutY="188.0" mnemonicParsing="false" onAction="#RadioButtons_Action" text="Number of People with Jawal or Oredo Phone Numbers">
+         <toggleGroup>
+            <ToggleGroup fx:id="choseOp" />
+         </toggleGroup>
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="b2" layoutX="27.0" layoutY="215.0" mnemonicParsing="false" onAction="#RadioButtons_Action" text="The Average Price of Items" toggleGroup="$choseOp">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="b3" layoutX="28.0" layoutY="245.0" mnemonicParsing="false" onAction="#RadioButtons_Action" text="List Number of Females and Males in Birzeit Events" toggleGroup="$choseOp">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="b4" layoutX="28.0" layoutY="272.0" mnemonicParsing="false" onAction="#RadioButtons_Action" text="List Number of Colthes Type" toggleGroup="$choseOp">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="b5" layoutX="27.0" layoutY="301.0" mnemonicParsing="false" onAction="#RadioButtons_Action" text="List the precentage of Females and Males Customers" toggleGroup="$choseOp">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font></RadioButton>
+      <HBox prefHeight="70.0" prefWidth="883.0" style="-fx-background-color: #9CC1DB;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="60.0" top="10.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@img/QueriesPic.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Queries on All Tables" wrappingWidth="260.3156433105469">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <BarChart fx:id="barchart" layoutX="71.0" layoutY="317.0" prefHeight="238.0" prefWidth="370.0" title="Data">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis prefHeight="196.0" prefWidth="59.0" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button layoutX="27.0" layoutY="537.0" mnemonicParsing="false" onAction="#Back_Button" prefHeight="32.0" prefWidth="51.0" style="-fx-background-color: #4698A6;">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="valueTable1" layoutX="516.0" layoutY="82.0" prefHeight="230.0" prefWidth="338.0" style="-fx-background-color: #9CC1DB;">
+         <columns>
+            <TableColumn prefWidth="150.39990234375" style="-fx-color: #9CC1DB;" text="C1" />
+            <TableColumn prefWidth="183.20013427734375" style="-fx-color: #9CC1DB;" text="C2" />
+         </columns>
+      </TableView>
+      <TextField fx:id="value1" layoutX="149.0" layoutY="117.0" />
+      <Label layoutX="27.0" layoutY="122.0" text="Name of  any Artist">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="310.0" layoutY="118.0" mnemonicParsing="false" onAction="#get2" style="-fx-background-radius: 30; -fx-background-color: #C1DCE1;" text="Get">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

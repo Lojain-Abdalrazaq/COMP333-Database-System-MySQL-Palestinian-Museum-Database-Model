@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MasterpiecesController">
+   <top>
+      <AnchorPane prefHeight="627.0" prefWidth="876.0" style="-fx-background-color: #E1DDD8;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="MasterpiecesTable" layoutX="304.0" layoutY="134.0" prefHeight="466.0" prefWidth="546.0" style="-fx-background-color: #AF9875;">
+              <columns>
+                <TableColumn fx:id="item_idCol" maxWidth="102.4000244140625" prefWidth="67.20001220703125" style="-fx-color: #AF9875;" text="Item ID" />
+                  <TableColumn fx:id="Mp_idCol" maxWidth="128.80001068115234" prefWidth="83.199951171875" style="-fx-color: #AF9875;" text="Mpieces ID" />
+                <TableColumn fx:id="WeightCol" maxWidth="155.20004272460938" prefWidth="52.800048828125" style="-fx-color: #AF9875;" text="Weight" />
+                  <TableColumn fx:id="Material_Col" maxWidth="189.5999755859375" prefWidth="79.199951171875" style="-fx-color: #AF9875;" text="Material" />
+                  <TableColumn fx:id="Masterpieces_NameCol" maxWidth="280.8000183105469" prefWidth="102.4000244140625" style="-fx-color: #AF9875;" text="Mpieces Name" />
+                  <TableColumn fx:id="Artists_NameCol" maxWidth="339.1999816894531" prefWidth="72.0" style="-fx-color: #AF9875;" text="Artistes" />
+                  <TableColumn fx:id="Editc" maxWidth="365.6000061035156" prefWidth="84.7999267578125" style="-fx-color: #AF9875;" text="Edit" />
+              </columns>
+            </TableView>
+            <Text layoutX="302.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Masterpieces Details" wrappingWidth="356.90185546875">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Text>
+            <VBox layoutX="-1.0" prefHeight="631.0" prefWidth="218.0" style="-fx-background-color: #AF9875;">
+               <children>
+                  <ImageView fitHeight="174.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Item1.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onMouseClicked="#getAddView" prefHeight="73.0" prefWidth="290.0" style="-fx-background-color: #AF9875;" text="Insert" textAlignment="CENTER" textFill="#1e0101">
+                     <font>
+                        <Font name="SansSerif Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/add-user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#RefreshTable" prefHeight="73.0" prefWidth="290.0" style="-fx-background-color: #AF9875;" text="Refresh" textFill="#1e0101">
+                     <font>
+                        <Font name="SansSerif Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/reload.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#BackButton" prefHeight="73.0" prefWidth="290.0" style="-fx-background-color: #AF9875;" text="Back">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="SansSerif Bold" size="13.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="260.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/sculpture.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

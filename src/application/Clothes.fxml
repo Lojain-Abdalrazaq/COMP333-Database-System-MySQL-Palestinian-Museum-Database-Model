@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClothesController">
+   <top>
+      <AnchorPane prefHeight="627.0" prefWidth="876.0" style="-fx-background-color: #FFFEFA;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="ClothesTable" layoutX="335.0" layoutY="139.0" prefHeight="464.0" prefWidth="499.0" style="-fx-background-color: #D5CAB5;">
+              <columns>
+                <TableColumn fx:id="item_idCol" maxWidth="102.4000244140625" prefWidth="56.0" style="-fx-color: #D5CAB5;" text="Item_ID" />
+                  <TableColumn fx:id="clothes_idCol" maxWidth="112.79998779296875" prefWidth="71.20001220703125" style="-fx-color: #D5CAB5;" text="Clothes_ID" />
+                <TableColumn fx:id="sizeCol" maxWidth="104.0" prefWidth="58.39996337890625" style="-fx-color: #D5CAB5;" text="SIZE" />
+                  <TableColumn fx:id="colorCol" maxWidth="152.0" prefWidth="64.0" style="-fx-color: #D5CAB5;" text="COLOR" />
+                  <TableColumn fx:id="genderCol" maxWidth="185.5999755859375" prefWidth="72.00003051757812" style="-fx-color: #D5CAB5;" text="GENDER" />
+                  <TableColumn fx:id="DescriptionCol" maxWidth="235.20004272460938" prefWidth="94.4000244140625" style="-fx-color: #D5CAB5;" text="DESCRIPTION" />
+                  <TableColumn fx:id="Editc" maxWidth="192.80001831054688" prefWidth="77.59991455078125" style="-fx-color: #D5CAB5;" text="EDIT" />
+              </columns>
+            </TableView>
+            <Text layoutX="349.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothes Details" wrappingWidth="356.90185546875">
+               <font>
+                  <Font name="Serif Bold" size="28.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_LEFT" layoutX="62.0" layoutY="89.0" prefHeight="68.0" prefWidth="200.0" />
+            <ImageView fitHeight="32.0" fitWidth="41.0" layoutX="312.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/t-shirt.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="631.0" prefWidth="253.0" style="-fx-background-color: #D5CAB5;">
+               <children>
+                  <ImageView fitHeight="143.0" fitWidth="288.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Clothing.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button alignment="BOTTOM_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#getAddView" onMouseClicked="#getAddView" prefHeight="73.0" prefWidth="290.0" style="-fx-background-color: #D5CAB5;" text="Insert" textAlignment="CENTER" textFill="#1e0101">
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/add-user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="80.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="40.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BOTTOM_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#RefreshTable" prefHeight="78.0" prefWidth="305.0" style="-fx-background-color: #D5CAB5;" text="Refresh" textFill="#1e0101">
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/reload.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="80.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BOTTOM_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="78.0" prefWidth="305.0" style="-fx-background-color: #D5CAB5;" text="Back" textFill="#1e0101">
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="80.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="876.0" style="-fx-background-color: #F0F3F7;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpController">
+   <children>
+      <TextField fx:id="name" layoutX="616.0" layoutY="98.0" style="-fx-background-radius: 10;" />
+      <Text fill="#17283e" layoutX="469.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Fall Name">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#17283e" fontSmoothingType="LCD" layoutX="476.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up as a new Employee">
+         <font>
+            <Font name="Serif Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <TextField fx:id="Eemail" layoutX="616.0" layoutY="146.0" style="-fx-background-radius: 10;" />
+      <Text fill="#17283e" layoutX="471.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Email">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Eaddress" layoutX="615.0" layoutY="194.0" style="-fx-background-radius: 10;" />
+      <Text fill="#17283e" layoutX="468.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Address">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Ephone" layoutX="615.0" layoutY="236.0" style="-fx-background-radius: 10;" />
+      <Text fill="#17283e" layoutX="469.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Phone Number" wrappingWidth="136.77343750000023">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Egender" layoutX="614.0" layoutY="281.0" style="-fx-background-radius: 10;" />
+      <Text fill="#17283e" layoutX="467.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Gender">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#17283e" layoutX="466.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Password">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#17283e" layoutX="467.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confrim Password">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button alignment="CENTER" layoutX="671.0" layoutY="448.0" mnemonicParsing="false" onAction="#SignUpButton" prefHeight="54.0" prefWidth="123.0" style="-fx-background-color: #C7CBD4; -fx-text-fill: #17283e; -fx-background-radius: 100;" text="Sign UP !">
+         <font>
+            <Font name="SansSerif Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.062745101749897" green="0.4431372582912445" blue="0.9058823585510254" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <PasswordField fx:id="Epassword" layoutX="615.0" layoutY="328.0" style="-fx-background-radius: 10;" />
+      <PasswordField fx:id="passwordConfrim" layoutX="616.0" layoutY="376.0" style="-fx-background-radius: 10;" />
+      <Button alignment="CENTER" layoutX="490.0" layoutY="448.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="47.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-text-fill: #4E5D40; -fx-background-radius: 100;">
+         <font>
+            <Font name="Candara Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.062745101749897" green="0.4431372582912445" blue="0.9058823585510254" />
+               </color>
+            </DropShadow>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="SignUpMessage" alignment="CENTER" layoutX="391.0" layoutY="71.0" prefHeight="16.0" prefWidth="482.0" textFill="#1ba6f7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="matchedPass" alignment="CENTER" layoutX="618.0" layoutY="360.0" prefHeight="16.0" prefWidth="150.0" textFill="#f51b1b">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="2.0" prefHeight="587.0" prefWidth="386.0">
+         <children>
+            <ImageView fitHeight="587.0" fitWidth="391.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/GalleryPM.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#f4f2f2" layoutX="25.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome !">
+               <font>
+                  <Font name="Bauhaus 93" size="44.0" />
+               </font>
+            </Text>
+            <Text fill="#efe7e7" layoutX="21.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Palestinian Museum - Non-Governmental Association" wrappingWidth="349.3208923339844">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="47.0" fitWidth="51.0" layoutX="404.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/locked.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

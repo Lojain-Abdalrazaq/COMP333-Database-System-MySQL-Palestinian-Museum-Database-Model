@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="458.0" style="-fx-background-color: #FFFEFA;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddClothesController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="315.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@img/t-shirt.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clothes Details" wrappingWidth="233.23638784885406">
+               <font>
+                  <Font name="Times New Roman" size="35.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox>
+         <children>
+            <Text fx:id="Item_ID" strokeType="OUTSIDE" strokeWidth="0.0" text="    Enter Item ID" wrappingWidth="186.93668293952942">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="Item_FID" cache="true" prefHeight="25.0" prefWidth="220.0" style="-fx-background-radius: 15;" />
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="65.0">
+         <children>
+            <Text fx:id="Clothes_ID" strokeType="OUTSIDE" strokeWidth="0.0" text="    Enter Clothes ID" wrappingWidth="184.53668785095215">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="Clothes_FID" prefHeight="25.0" prefWidth="220.0" style="-fx-background-radius: 15;" />
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="92.0" prefHeight="26.0" prefWidth="355.0">
+         <children>
+            <Text fx:id="SIZE" strokeType="OUTSIDE" strokeWidth="0.0" text="    Enter Size" wrappingWidth="183.7367000579834">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="SIZE_FID" prefHeight="25.0" prefWidth="220.0" style="-fx-background-radius: 15;" />
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox fx:id="Color" layoutX="10.0" layoutY="118.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="    Enter Color" wrappingWidth="184.53668785095215">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="COLOR_FID" prefHeight="25.0" prefWidth="220.0" style="-fx-background-radius: 15;" />
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="144.0">
+         <children>
+            <Text fx:id="Gender" strokeType="OUTSIDE" strokeWidth="0.0" text="    Enter Gender" wrappingWidth="182.93671226501465">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="GENDER_FID" prefHeight="25.0" prefWidth="220.0" style="-fx-background-radius: 15;" />
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="35.0" layoutY="308.0" prefHeight="15.0" prefWidth="562.0">
+         <children>
+            <Text fx:id="Description" strokeType="OUTSIDE" strokeWidth="0.0" text="    Enter Description" wrappingWidth="182.13666343688965">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="DESCRIPTION_FID" prefHeight="25.0" prefWidth="220.0" style="-fx-background-radius: 15;" />
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="434.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="118.0" style="-fx-background-color: #D5CAB5; -fx-background-radius: 30;" text="Save">
+               <opaqueInsets>
+                  <Insets left="10.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="60.0" right="50.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="128.0" layoutY="14.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="110.0" style="-fx-background-color: #D5CAB5; -fx-background-radius: 30;" text="Delete">
+               <opaqueInsets>
+                  <Insets left="10.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="20.0" right="50.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+         <padding>
+            <Insets right="15.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="25.0" top="17.0" />
+   </padding>
+</VBox>
