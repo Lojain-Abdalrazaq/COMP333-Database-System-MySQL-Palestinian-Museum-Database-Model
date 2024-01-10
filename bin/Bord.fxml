@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="876.0" styleClass="back" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BordController">
+   <children>
+      <Button fx:id="BacktoMain_Button" layoutX="24.0" layoutY="530.0" mnemonicParsing="false" onAction="#BacktoMain" prefHeight="54.0" prefWidth="78.0" style="-fx-background-radius: 40; -fx-text-fill: white; -fx-background-color: transperent;">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Back.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button alignment="CENTER" layoutX="379.0" layoutY="173.0" mnemonicParsing="false" onAction="#ItemsButton" prefHeight="26.0" prefWidth="85.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Items">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Candara Bold" size="18.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="513.0" layoutX="195.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/item3.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="73.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Clothing.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button layoutX="131.0" layoutY="345.0" mnemonicParsing="false" onAction="#ClothesButton" prefHeight="18.0" prefWidth="70.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Clothes">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="112.0" fitWidth="193.0" layoutX="345.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Item1.jpg" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.05263157933950424" green="0.04600390046834946" blue="0.04600390046834946" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Button layoutX="381.0" layoutY="345.0" mnemonicParsing="false" onAction="#MasterPeicesButton" prefHeight="19.0" prefWidth="114.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="MasterPeices">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="615.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Books.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button layoutX="680.0" layoutY="345.0" mnemonicParsing="false" onAction="#BooksButton" prefHeight="18.0" prefWidth="70.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Books">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="223.0" layoutX="201.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Exhimage.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button layoutX="261.0" layoutY="547.0" mnemonicParsing="false" onAction="#EventsButton" prefHeight="18.0" prefWidth="70.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Events">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="223.0" layoutX="495.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/customerss.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button layoutX="563.0" layoutY="547.0" mnemonicParsing="false" onAction="#CustomerButton" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Customers">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="20.0" layoutX="345.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/option.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="20.0" layoutX="100.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/t-shirt.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="20.0" layoutX="355.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/sculpture.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="20.0" layoutX="649.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/open-book.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="20.0" layoutX="227.0" layoutY="552.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/calendar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="20.0" layoutX="531.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/customer.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Report_Button" layoutX="767.0" layoutY="519.0" mnemonicParsing="false" onAction="#Report_Button_Action" prefHeight="54.0" prefWidth="78.0" style="-fx-background-radius: 40; -fx-text-fill: white; -fx-background-color: transperent;">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/report.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

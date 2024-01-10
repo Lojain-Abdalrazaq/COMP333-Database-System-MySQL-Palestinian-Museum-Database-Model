@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="161.0" prefWidth="191.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EventKeyController">
+   <children>
+      <TableView fx:id="EvTable" layoutY="1.0" prefHeight="160.0" prefWidth="202.0" style="-fx-background-color: #D6D6D6;">
+        <columns>
+          <TableColumn prefWidth="200.79999387264252" style="-fx-color: #D6D6D6;" text="C1" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

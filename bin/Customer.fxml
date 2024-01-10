@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="57.0" prefWidth="404.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-23.0" prefHeight="627.0" prefWidth="876.0" style="-fx-background-color: #F0EDEC;">
+         <children>
+            <TableView fx:id="customerTable" layoutX="335.0" layoutY="126.0" prefHeight="464.0" prefWidth="499.0" style="-fx-background-color: #BFBAB7;">
+              <columns>
+                <TableColumn fx:id="cid" prefWidth="74.4000244140625" style="-fx-color: #BFBAB7;" styleClass=".cloum-header-background" text="Customer ID" />
+                <TableColumn fx:id="cname" prefWidth="70.39996337890625" style="-fx-color: #BFBAB7;" styleClass=".cloum-header-background" text="Name" />
+                  <TableColumn fx:id="cdate" prefWidth="72.0" style="-fx-color: #BFBAB7;" styleClass=".cloum-header-background" text="Birthdate" />
+                  <TableColumn fx:id="cgender" minWidth="0.0" prefWidth="47.20001220703125" style="-fx-color: #BFBAB7;" styleClass=".cloum-header-background" text="Gender" />
+                  <TableColumn fx:id="caddress" prefWidth="92.7999267578125" style="-fx-color: #BFBAB7;" styleClass=".cloum-header-background" text="Address" />
+                  <TableColumn fx:id="eid" prefWidth="51.2000732421875" style="-fx-color: #BFBAB7;" styleClass=".cloum-header-background" text="EID" />
+                  <TableColumn fx:id="Editc" prefWidth="88.00004882812499" style="-fx-color: #BFBAB7;" styleClass=".cloum-header-background" text="Edit" />
+              </columns>
+            </TableView>
+            <Text fill="#15010d" layoutX="388.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Details">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="334.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/customer.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="3.0" layoutY="22.0" prefHeight="614.0" prefWidth="240.0" style="-fx-background-color: #BFBAB7;">
+               <children>
+                  <ImageView fitHeight="158.0" fitWidth="333.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@img/customerss.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="refreshButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#RefreshCustomer" prefHeight="74.0" prefWidth="314.0" style="-fx-background-color: #BFBAB7;" text="Refresh" textFill="#310404">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/reload.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                     <font>
+                        <Font name="SansSerif Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="90.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#getAddView" prefHeight="82.0" prefWidth="316.0" style="-fx-background-color: #BFBAB7;" text="Add">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/add-user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                     <font>
+                        <Font name="SansSerif Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#key" prefHeight="82.0" prefWidth="316.0" style="-fx-background-color: #BFBAB7;" text="Keys">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/keyword.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                     <font>
+                        <Font name="SansSerif Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="82.0" prefWidth="316.0" style="-fx-background-color: #BFBAB7;" text="Back">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                     <font>
+                        <Font name="SansSerif Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

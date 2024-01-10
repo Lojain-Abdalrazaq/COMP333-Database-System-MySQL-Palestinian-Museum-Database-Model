@@ -1,0 +1,4 @@
+.back{
+    -fx-background-image: url('img/ImageForBorder.jpg');
+    -fx-background-size:cover;
+}

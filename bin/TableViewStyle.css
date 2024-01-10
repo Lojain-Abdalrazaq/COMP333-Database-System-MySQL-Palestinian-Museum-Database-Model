@@ -1,0 +1,9 @@
+.table-veiw{
+    -fx-background-color: #E4D1B9;
+    -fx-background-radius: 30;
+}
+.cloum-header-background {
+    -fx-background-color: hsl(40, 1%, 48%);
+    -fx-background-radius: 30;
+   
+}
